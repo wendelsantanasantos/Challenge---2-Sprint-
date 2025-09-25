@@ -1,0 +1,18 @@
+:root{
+    --bgColo-1r: #FFF4E0;
+    --bgColor-2r: #D93F07;
+    --bgColor-3r: #A6243C;
+    --bgColor-4r: #9E2138;
+
+    --textColor-1r: #323131;
+    --textColor-2r: #400E17;
+
+    --primaryColor-1r: #B20E0E;
+    --secondaryColor-2r: #5FB363;
+
+    --gradient-1r: linear-gradient(90deg, #503E90 0%, #896BF6 100%);
+    
+    --fade: #1A1A1A;
+    --fontFamily-1r: "Inter", sans-serif;
+    --fontFamily-2r: "Roboto", sans-serif;
+}
