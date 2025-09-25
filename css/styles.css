@@ -3,6 +3,7 @@
     --bgColor-2r: #D93F07;
     --bgColor-3r: #A6243C;
     --bgColor-4r: #9E2138;
+    --bgColor-5r: #e1edf0;
 
     --textColor-1r: #323131;
     --textColor-2r: #400E17;
@@ -10,9 +11,60 @@
     --primaryColor-1r: #B20E0E;
     --secondaryColor-2r: #5FB363;
 
+    --btn-color1: #fa7f0c;
     --gradient-1r: linear-gradient(90deg, #503E90 0%, #896BF6 100%);
     
     --fade: #1A1A1A;
+    --fade1: #ffc6843a;
     --fontFamily-1r: "Inter", sans-serif;
     --fontFamily-2r: "Roboto", sans-serif;
 }
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bgColo-1r);
+    color: var(--textColor-1r);
+    font-family: var(--fontFamily-1r);
+    margin: 0;
+    padding: 0;
+}
+
+.btn-orange{
+    background-color: var(--btn-color1);
+    width: 40%;
+    transition: .3s all;
+    color: white;
+}
+
+.btn-orange:hover{
+    background-color: var(--btn-color1);
+    width: 70%;
+}
+
+.input-orange{
+    background-color: var(--fade1);
+    padding: .8em;
+}
+
+
+.form-control::placeholder{
+    color: var(--textColor-1r);
+    opacity: 0.5;
+}
+
+.form-label{
+    font-weight: 400;
+}
+
+.spam-1{
+    color: var(--bgColor-2r);
+}
+
+.navbar {
+    border-bottom:1px solid rgba(75, 75, 75, 0.137);
+    padding: 2em;
+}
+
