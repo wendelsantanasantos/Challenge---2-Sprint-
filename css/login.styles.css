@@ -8,6 +8,11 @@ body {
     padding: 0;
 }
 
+.navbar {
+    border-bottom:1px solid rgba(75, 75, 75, 0.137);
+    padding: 2em;
+}
+
 .logo-container{
     margin: 0 auto;
     max-width: 230px;

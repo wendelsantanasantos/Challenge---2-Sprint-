@@ -1,0 +1,322 @@
+@import url("styles.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily-1r);
+  background-color: var(--bgColor-1r);
+  color: var(--textColor-1r);
+}
+
+.sidebar {
+  background-color: var(--bgColor-5r);
+  min-height: 100vh;
+  padding: 20px 0;
+  border-right: 1px solid #e0e0e0;
+}
+
+.menu-item {
+  color: var(--textColor-1r);
+  text-decoration: none;
+  padding: 12px 20px;
+  display: block;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  margin: 5px 15px;
+}
+
+.menu-item:hover,
+.menu-item.ativo {
+  background-color: var(--btn-color1);
+  color: white;
+  text-decoration: none;
+}
+
+.menu-secao {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 20px 20px 10px 20px;
+  margin-top: 20px;
+}
+
+.menu-secao:first-child {
+  margin-top: 0;
+}
+
+.logo-container{
+    margin: 0;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.conteudo-principal {
+  background-color: white;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.cabecalho-perfil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.titulo-perfil {
+  color: var(--textColor-2r);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.botao-configuracoes {
+  background: none;
+  border: none;
+  color: var(--textColor-1r);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--gradient-1r);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto 20px auto;
+}
+
+.foto-perfil img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+}
+
+.foto-placeholder {
+  color: white;
+  font-size: 40px;
+}
+
+.icone-editar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--btn-color1);
+  color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid white;
+  cursor: pointer;
+}
+
+.nome-usuario {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--textColor-2r);
+  margin-bottom: 15px;
+}
+
+.nivel-progress {
+  background-color: #f0f0f0;
+  height: 8px;
+  border-radius: 4px;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.nivel-fill {
+  background: var(--gradient-1r);
+  height: 100%;
+  width: 75%;
+  border-radius: 4px;
+}
+
+.nivel-numeros {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+}
+
+.cartao-estatisticas {
+  background: var(--gradient-1r);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  margin: 20px 0;
+}
+
+.estatisticas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  text-align: center;
+}
+
+.estatistica-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.estatistica-item p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.secao-titulo {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--textColor-2r);
+  margin: 25px 0 15px 0;
+}
+
+.lista-amigos {
+  background-color: var(--secondaryColor-2r);
+  border-radius: 15px;
+  padding: 20px;
+  height: 300px;
+}
+
+.amigo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.amigo-item:last-child {
+  border-bottom: none;
+}
+
+.amigo-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  margin-right: 12px;
+}
+
+.grafico-desempenho {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  height: 300px;
+}
+
+.barra-grafico {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  height: 180px;
+  margin: 20px 0;
+}
+
+.barra {
+  background-color: var(--bgColor-2r);
+  border-radius: 4px 4px 0 0;
+  width: 25px;
+  min-height: 20px;
+}
+
+.dias-semana {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.botao-treinamentos {
+  background-color: var(--bgColor-3r);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botao-treinamentos:hover {
+  background-color: var(--bgColor-4r);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .conteudo-principal {
+    padding: 20px 15px;
+  }
+
+  .cabecalho-perfil {
+    margin-bottom: 20px;
+  }
+
+  .titulo-perfil {
+    font-size: 24px;
+  }
+
+  .foto-perfil {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  .foto-perfil img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .estatisticas-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .estatistica-item h4 {
+    font-size: 16px;
+  }
+
+  .lista-amigos,
+  .grafico-desempenho {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .estatisticas-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .estatistica-item {
+    padding: 10px;
+  }
+}
