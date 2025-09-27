@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Swift</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="../css/dashboard.css" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navbar navbar-expand-lg d-flex justify-content-between align-items-center px-lg-4 px-2 py-3">
+            <div class="logo-container">
+              <img
+                src="../assets/Novo_Logo_Swift-04.png"
+                alt="logo swift"
+                class="logo-img"
+              />
+            </div>
+
+            <div class="barra-pesquisa mx-lg-4 mx-2 w-50">
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Pesquisar..."
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success d-none d-md-block"
+                  type="submit"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+                <button
+                  class="btn btn-outline-success d-md-none px-2"
+                  type="submit"
+                >
+                  <i class="fas fa-search"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="acoes-navbar d-flex align-items-center gap-lg-3 gap-2">
+              <div class="icone-perfil d-flex align-items-center gap-2 d-none d-md-inline">
+                <i class="fas fa-user"></i>
+                <span class="username">Gustavo Silva</span>
+                <i class="fas fa-chevron-down "></i>
+              </div>
+              <div class="icone-notificacoes">
+                <i class="fas fa-bell"></i>
+              </div>
+            </div>
+          </div>
+
+    <div class="sidebar">
+            <div class="menu-secao">MENU</div>
+            <a href="#" class="menu-item ativo">
+              <i class="fas fa-chart-bar me-2"></i> Estatísticas
+            </a>
+            <a href="#" class="menu-item">
+              <i class="fas fa-trophy me-2"></i> Loja de Recompensas
+            </a>
+            <a href="#" class="menu-item">
+              <i class="fas fa-bullseye me-2"></i> Objetivos
+            </a>
+            <a href="#" class="menu-item">
+              <i class="fas fa-comments me-2"></i> Comunicados
+            </a>
+
+            <div class="menu-secao">OUTROS</div>
+            <a href="#" class="menu-item">
+              <i class="fas fa-cog me-2"></i> Configurações
+            </a>
+            <a href="#" class="menu-item">
+              <i class="fas fa-coins me-2"></i> Pontos
+            </a>
+            <a href="#" class="menu-item">
+              <i class="fas fa-users me-2"></i> Colaboradores
+            </a>
+            <a href="#" class="menu-item">
+              <i class="fas fa-book me-2"></i> Explicação
+            </a>
+          </div>
+
+    <div class="main-content">
+      <div class="conteudo-principal">
+            <div class="row mb-4">
+              <div class="col-lg-6 mb-4">
+                <div class="card estatisticas-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Estatísticas</h5>
+                    <div class="total-pontos">
+                      <span class="pontos-numero">38917</span>
+                      <span class="pontos-label">Total de Pontos Swift:</span>
+                      <div class="crescimento">
+                        <i class="fas fa-arrow-up text-success"></i>
+                        <span class="text-success">↑ 2.1% na última semana</span>
+                      </div>
+                    </div>
+                    <div class="grafico-container">
+                      <h6>Gráfico de Pontos Gerais dos últimos 30 Dias</h6>
+                      <canvas id="graficoBarras"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="card crescimento-card">
+                  <div class="card-body">
+                    <h5 class="card-title">Seu crescimento pessoal</h5>
+                    <div class="pontos-pessoais">
+                      <span class="pontos-numero">1728</span>
+                      <span class="pontos-label">Pontos</span>
+                    </div>
+                    <div class="grafico-container">
+                      <h6>Pontos dos últimos 30 dias</h6>
+                      <canvas id="graficoLinha"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card acao-card">
+                  <div class="card-body">
+                    <i class="fas fa-gift card-icon"></i>
+                    <h6 class="card-title">Prêmios disponíveis</h6>
+                    <p class="card-text">Lista de prêmios disponíveis para você</p>
+                    <button class="btn btn-orange">Lista</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card acao-card">
+                  <div class="card-body">
+                    <i class="fas fa-users card-icon"></i>
+                    <h6 class="card-title">Lista de colaboradores</h6>
+                    <p class="card-text">Lista dos colaboradores ativos na Swift</p>
+                    <button class="btn btn-orange">Colaboradores</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card acao-card">
+                  <div class="card-body">
+                    <i class="fas fa-bullhorn card-icon"></i>
+                    <h6 class="card-title">Comunicados Importantes</h6>
+                    <p class="card-text">Fique por dentro dos comunicados da Swift</p>
+                    <button class="btn btn-orange">Comunicados</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 mb-4">
+                <div class="card ranking-card">
+                  <div class="card-body">
+                    <h6 class="card-title">Ranking</h6>
+                    <p class="card-text">Ranking dos TOP Colaboradores desse mês</p>
+                    <div class="ranking-list">
+                      <div class="ranking-item">
+                        <img src="../assets/avatar.png" alt="Kaue" class="ranking-avatar">
+                        <div class="ranking-info">
+                          <span class="ranking-nome">Kaue Jacob</span>
+                          <span class="ranking-pontos">2312 Pontos</span>
+                        </div>
+                      </div>
+                      <div class="ranking-item">
+                        <img src="../assets/avatar.png" alt="Gustavo" class="ranking-avatar">
+                        <div class="ranking-info">
+                          <span class="ranking-nome">Gustavo Oliveira</span>
+                          <span class="ranking-pontos">1728 Pontos</span>
+                        </div>
+                      </div>
+                      <div class="ranking-item">
+                        <img src="../assets/avatar.png" alt="Isaak" class="ranking-avatar">
+                        <div class="ranking-info">
+                          <span class="ranking-nome">Isaak Silva</span>
+                          <span class="ranking-pontos">1568 Pontos</span>
+                        </div>
+                      </div>
+                      <div class="ranking-item">
+                        <img src="../assets/avatar.png" alt="Lucas" class="ranking-avatar">
+                        <div class="ranking-info">
+                          <span class="ranking-nome">Lucas Alves</span>
+                          <span class="ranking-pontos">1381 Pontos</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 mb-4">
+                <div class="card desafios-card">
+                  <div class="card-body">
+                    <h6 class="card-title">Número de Desafios</h6>
+                    <div class="desafios-container">
+                      <canvas id="graficoRosca"></canvas>
+                      <div class="desafios-legend">
+                        <div class="legend-item">
+                          <span class="legend-color manha"></span>
+                          <span>Manhã: 40%</span>
+                        </div>
+                        <div class="legend-item">
+                          <span class="legend-color tarde"></span>
+                          <span>Tarde: 32%</span>
+                        </div>
+                        <div class="legend-item">
+                          <span class="legend-color noite"></span>
+                          <span>Noite: 28%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>
