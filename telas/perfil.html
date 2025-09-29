@@ -86,6 +86,9 @@
           <div class="sidebar">
             <div class="menu-secao">MENU</div>
             <a href="#" class="menu-item ativo">
+              <i class="fas fa-user me-2"></i> Perfil
+            </a>
+            <a href="#" class="menu-item">
               <i class="fas fa-chart-bar me-2"></i> Estatísticas
             </a>
             <a href="#" class="menu-item">
@@ -123,7 +126,9 @@
             </div>
 
             <div class="row">
-              <div class="col-lg-4 col-md-12 mb-4">
+              <div
+                class="col-lg-12 mb-4 card card-body d-flex justify-content-center"
+              >
                 <div class="text-center">
                   <div class="foto-perfil">
                     <i class="fas fa-user foto-placeholder"></i>
@@ -132,77 +137,159 @@
                     </div>
                   </div>
 
-                  <h3 class="nome-usuario">username</h3>
+                  <h3 class="nome-usuario">Gustavo Silva</h3>
+                  <p class="mb-1">
+                    Analista de Vendas • Departamento Comercial
+                  </p>
+                  <small class="text-muted">Membro desde Janeiro 2024</small>
 
-                  <div class="nivel-numeros">
-                    <span>53</span>
-                    <span>54</span>
-                  </div>
-                  <div class="nivel-progress">
-                    <div class="nivel-fill"></div>
+                  <div class="nivel-container mt-3">
+                    <div class="nivel-numeros">
+                      <span>53</span>
+                      <span>54</span>
+                    </div>
+                    <div class="nivel-progress">
+                      <div class="nivel-fill"></div>
+                    </div>
                   </div>
                 </div>
 
-                <div class="cartao-estatisticas">
-                  <div class="estatisticas-grid">
-                    <div class="estatistica-item">
-                      <h4>180</h4>
-                      <p>XP</p>
+                <div class="cartao-estatisticas rounded-3 p-3">
+                  <div class="row g-2">
+                    <div class="col-md-2 col-4">
+                      <div class="estatistica-item rounded-2 p-2 text-center">
+                        <h5 class="fs-5 fw-bold mb-0">180</h5>
+                        <small class="text-warning fw-semibold">XP</small>
+                      </div>
                     </div>
-                    <div class="estatistica-item">
-                      <h4>985</h4>
-                      <p><i class="fas fa-coins"></i></p>
+                    <div class="col-md-2 col-4">
+                      <div class="estatistica-item rounded-2 p-2 text-center">
+                        <h5 class="fs-5 fw-bold mb-0">985</h5>
+                        <div class="icon-highlight">
+                          <i class="fas fa-coins text-warning"></i>
+                        </div>
+                      </div>
                     </div>
-                    <div class="estatistica-item">
-                      <h4>2</h4>
-                      <p><i class="fas fa-trophy"></i></p>
+                    <div class="col-md-2 col-4">
+                      <div class="estatistica-item rounded-2 p-2 text-center">
+                        <h5 class="fs-5 fw-bold mb-0">45</h5>
+                        <div class="icon-highlight">
+                          <i class="fas fa-medal text-warning"></i>
+                        </div>
+                      </div>
                     </div>
-                    <div class="estatistica-item">
-                      <h4>15</h4>
-                      <p><i class="fas fa-users"></i></p>
+                    <div class="col-md-2 col-4">
+                      <div class="estatistica-item rounded-2 p-2 text-center">
+                        <h5 class="fs-5 fw-bold mb-0">10</h5>
+                        <div class="icon-highlight">
+                          <i class="fas fa-bolt text-warning"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-4">
+                      <div class="estatistica-item rounded-2 p-2 text-center">
+                        <h5 class="fs-5 fw-bold mb-0">2</h5>
+                        <div class="icon-highlight">
+                          <i class="fas fa-trophy text-warning"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-2 col-4">
+                      <div class="estatistica-item rounded-2 p-2 text-center">
+                        <h5 class="fs-5 fw-bold mb-0">15</h5>
+                        <div class="icon-highlight">
+                          <i class="fas fa-users text-warning"></i>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-8 col-md-12">
-                <div class="row">
-                  <div class="col-md-6 mb-4">
-                    <h4
-                      class="secao-titulo text-white"
-                      style="
-                        background: var(--secondaryColor-2r);
-                        padding: 10px;
-                        border-radius: 10px 10px 0 0;
-                        margin-bottom: 0;
-                      "
-                    >
-                      Amigos
-                    </h4>
+              <div class="col-lg-12">
+                <div class="row gap-2">
+                  <div
+                    class="col-lg-4 mb-4 card card-body d-flex justify-content-center"
+                  >
                     <div
-                      class="lista-amigos"
-                      style="border-radius: 0 0 15px 15px; margin-top: 0"
+                      class="d-flex justify-content-between align-items-center mb-3"
                     >
+                      <h5 class="card-title mb-0">
+                        <i class="fas fa-user-friends text-success me-2"></i>
+                        Amigos (15)
+                      </h5>
+                      <small class="text-muted">4 online</small>
+                    </div>
+                    <div class="lista-amigos border rounded p-3">
                       <div class="amigo-item">
-                        <div class="amigo-avatar"></div>
-                        <span class="text-white">Maria Santos</span>
+                        <div
+                          class="amigo-avatar online d-flex justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <div
+                          class="item-amigo-info d-flex align-items-center justify-content-between"
+                        >
+                          <span>João Silva</span>
+                          <span class="xp-amigo fw-semibold">365xp</span>
+                        </div>
                       </div>
                       <div class="amigo-item">
-                        <div class="amigo-avatar"></div>
-                        <span class="text-white">João Silva</span>
+                        <div
+                          class="amigo-avatar online d-flex justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <div
+                          class="item-amigo-info d-flex align-items-center justify-content-between"
+                        >
+                          <span>Maria Oliveira</span>
+                          <span class="xp-amigo fw-semibold">324xp</span>
+                        </div>
                       </div>
                       <div class="amigo-item">
-                        <div class="amigo-avatar"></div>
-                        <span class="text-white">Ana Costa</span>
+                        <div
+                          class="amigo-avatar offline d-flex justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <div
+                          class="item-amigo-info d-flex align-items-center justify-content-between"
+                        >
+                          <span>Ana Costa</span>
+                          <span class="xp-amigo fw-semibold">298xp</span>
+                        </div>
                       </div>
                       <div class="amigo-item">
-                        <div class="amigo-avatar"></div>
-                        <span class="text-white">Carlos Lima</span>
+                        <div
+                          class="amigo-avatar offline d-flex justify-content-center align-items-center"
+                        >
+                          <i class="fas fa-user"></i>
+                        </div>
+                        <div
+                          class="item-amigo-info d-flex align-items-center justify-content-between"
+                        >
+                          <span>Carlos Pereira</span>
+                          <span class="xp-amigo fw-semibold">250xp</span>
+                        </div>
                       </div>
+                    </div>
+                    <div
+                      class="btn-laranja d-flex justify-content-center align-items-center p-2 mx-auto mt-3"
+                    >
+                      <i class="fas fa-plus me-2"></i>
+                      adicionar amigos
                     </div>
                   </div>
 
-                  <div class="col-md-6 mb-4">
-                    <h4 class="secao-titulo">Desempenho da Semana</h4>
+                  <div class="col-lg-5 col-md-5 mb-4 card card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center mb-3"
+                    >
+                      <h5 class="card-title mb-0">
+                        <i class="fas fa-chart-line text-warning me-2"></i>
+                        Desempenho Semanal
+                      </h5>
+                    </div>
                     <div class="grafico-desempenho">
                       <div class="barra-grafico">
                         <div class="barra" style="height: 60%"></div>
@@ -223,13 +310,78 @@
                         <span>dom</span>
                       </div>
                     </div>
+                    <div
+                      class="btn-laranja d-flex justify-content-center align-items-center p-2 w-50 mx-auto mt-3"
+                    >
+                      <i class="fas fa-chart-line me-2"></i>
+                      <span>ver detalhes</span>
+                    </div>
                   </div>
                 </div>
 
-                <button class="botao-treinamentos">
-                  <i class="fas fa-dumbbell me-2"></i>
-                  Treinamentos
-                </button>
+                <div class="col-lg-12 mb-4">
+                  <div class="row gap-2">
+                    <div class="col-lg-4 mb-4 card card-body">
+                      <h5 class="card-title">
+                        <i class="fas fa-tools text-primary me-2"></i>
+                        Habilidades
+                      </h5>
+
+                      <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                          <span class="fw-semibold">Vendas</span>
+                          <span class="badge bg-primary">Avançado</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar bg-primary"
+                            style="width: 85%"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                          <span class="fw-semibold">Atendimento</span>
+                          <span class="badge bg-success">Intermediário</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar bg-success"
+                            style="width: 65%"
+                          ></div>
+                        </div>
+                      </div>
+
+                      <div class="mb-3">
+                        <div class="d-flex justify-content-between mb-1">
+                          <span class="fw-semibold">Liderança</span>
+                          <span class="badge bg-warning">Iniciante</span>
+                        </div>
+                        <div class="progress">
+                          <div
+                            class="progress-bar bg-warning"
+                            style="width: 30%"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 mb-4 card card-body">
+                      <button
+                        class="botao-treinamentos botao-treinos mb-2 d-flex align-items-center justify-content-center p-5 text-white"
+                      >
+                        <i class="fas fa-dumbbell me-2"></i>
+                        Treinamentos
+                      </button>
+                      <button
+                        class="botao-treinamentos botao-certificacoes d-flex align-items-center justify-content-center p-5 text-white"
+                      >
+                        <i class="fas fa-certificate me-2"></i>
+                        Cerificações
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

@@ -15,9 +15,32 @@ body {
 
 .conteudo-principal {
   margin-top: 12vh;
-  background-color: white;
   min-height: 100vh;
   padding: 30px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--textColor-2r);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
 }
 
 .cabecalho-perfil {
@@ -90,7 +113,12 @@ body {
   margin-bottom: 15px;
 }
 
+.nivel-container {
+  width: 80%;
+  margin: 0 auto;
+}
 .nivel-progress {
+  width: 100%;
   background-color: #f0f0f0;
   height: 8px;
   border-radius: 4px;
@@ -117,14 +145,7 @@ body {
   border-radius: 15px;
   padding: 20px;
   color: white;
-  margin: 20px 0;
-}
-
-.estatisticas-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-  text-align: center;
+  margin: 20px;
 }
 
 .estatistica-item h4 {
@@ -135,9 +156,12 @@ body {
 .estatistica-item p {
   font-size: 12px;
   opacity: 0.9;
+  margin: 0;
 }
 
 .secao-titulo {
+  background: var(--secondaryColor-2r);
+  border-radius: 20px 20px 0 0;
   font-size: 18px;
   font-weight: 600;
   color: var(--textColor-2r);
@@ -145,10 +169,8 @@ body {
 }
 
 .lista-amigos {
-  background-color: var(--secondaryColor-2r);
   border-radius: 15px;
   padding: 20px;
-  height: 300px;
 }
 
 .amigo-item {
@@ -166,8 +188,32 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  background: linear-gradient(45deg, #ffecec, #ffefcc);
   margin-right: 12px;
+}
+
+.online {
+  border: 3px solid #4caf50;
+}
+
+.offline {
+  border: 3px solid #979797;
+}
+
+.item-amigo-info {
+  width: 80%;
+}
+
+.xp-amigo {
+  color: var(--btn-color1);
+}
+
+.btn-laranja {
+  background-color: var(--btn-color1);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  font-size: 0.8em;
 }
 
 .grafico-desempenho {
@@ -175,7 +221,6 @@ body {
   border-radius: 15px;
   padding: 20px;
   border: 1px solid #e0e0e0;
-  height: 300px;
 }
 
 .barra-grafico {
@@ -188,7 +233,7 @@ body {
 
 .barra {
   background-color: var(--bgColor-2r);
-  border-radius: 4px 4px 0 0;
+  border-radius: 20px;
   width: 25px;
   min-height: 20px;
 }
@@ -201,24 +246,27 @@ body {
 }
 
 .botao-treinamentos {
-  background-color: var(--bgColor-3r);
-  color: white;
+  font-size: 1.2em;
   border: none;
   border-radius: 10px;
-  padding: 15px;
-  width: 100%;
   font-weight: 600;
-  margin-top: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .botao-treinamentos:hover {
-  background-color: var(--bgColor-4r);
   transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
+.botao-treinos{
+  background-color: var(--bgColor-3r);
+}
+
+.botao-certificacoes{
+  background-color: var(--btn-color1);
+}
+
+@media (max-width: 765px) {
   .sidebar {
     display: none;
   }
@@ -246,20 +294,6 @@ body {
     height: 90px;
   }
 
-  .estatisticas-grid {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-  }
-
-  .estatistica-item h4 {
-    font-size: 16px;
-  }
-
-  .lista-amigos,
-  .grafico-desempenho {
-    height: 250px;
-    margin-bottom: 20px;
-  }
 }
 
 @media (max-width: 576px) {
