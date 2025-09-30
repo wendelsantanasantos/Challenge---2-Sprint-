@@ -47,6 +47,7 @@ body {
 .input-orange{
     background-color: var(--fade1);
     padding: .8em;
+    border: none;
 }
 
 

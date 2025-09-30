@@ -1,11 +1,5 @@
 @import url("styles.css");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--fontFamily-1r);
   background-color: #f5f5f5;
@@ -161,6 +155,7 @@ body {
   white-space: nowrap;
   background-color: #a8443b;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .swift-coins-icon-cupom {
@@ -184,6 +179,70 @@ body {
   font-size: 0.75rem;
 }
 
+.produto-card {
+  background-color: #f3f3f3d7;
+  border-radius: 0 50px 5px 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(217, 74, 46, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.produto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(217, 74, 46, 0.3);
+}
+
+.produto-body {
+   height: 380px;
+}
+
+.porduto-imagem {
+  width: 100%;
+  height: 65%;
+}
+
+.porduto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.produto-descricao{
+  border-radius: 20px 0 5px 5px;
+  background: linear-gradient(
+  0deg,
+  #f5f5f5 0%,
+  #f5f5f5 80%,
+  #fff5f39a 100% 
+);
+  margin-top: -2em;
+  position: relative;
+   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.produto-nome {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--textColor-1r);
+}
+
+.produto-descricao-quant {
+  font-size: 0.8rem;
+  color: #797777;
+  line-height: 1.3;
+}
+
+
+.produto-preco {
+  white-space: nowrap;
+  background-color: #a8443b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
 @media (max-width: 992px) {
   .cupom-card {
     height: 140px;
@@ -195,6 +254,50 @@ body {
 }
 
 @media (max-width: 576px) {
+  .titulo-principal {
+  color: var(--textColor-2r);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.swift-coins {
+  width: 30px;
+  height: 30px;
+  background-color: var(--bgColor-2r);
+  border-radius: 50% 0 50% 50%;
+  border: 3px solid #313131;
+}
+
+.swift-coins-icon {
+  width: 20px;
+  height: 20px;
+  background-color: var(--bgColor-1r);
+  border-radius: 50%;
+  border: 3px solid #313131;
+  font-weight: 700;
+}
+
+.swift-coins-icon span{
+  font-size: 0.8rem;
+}
+
+.swift-coins-amount{
+  font-size: 0.9rem;
+}
+
+.filtros {
+  max-width: 300px;
+}
+.filtro-item {
+  cursor: pointer;
+  transition: 0.8s ease;
+  font-size: 0.7em;
+
+}
+.filtro-item:hover {
+  background-color: var(--bgColor-1r);
+}
+
   .cupom-card {
     height: 130px;
   }
