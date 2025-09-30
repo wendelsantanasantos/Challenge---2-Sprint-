@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login swift</title>
+    <title>Recompensas swift</title>
 
     <!-- bootstrap -->
     <link
@@ -85,13 +85,13 @@
         <div class="col-lg-3 col-md-4 d-none d-md-block p-0">
           <div class="sidebar">
             <div class="menu-secao">MENU</div>
-            <a href="#" class="menu-item ativo">
+            <a href="#" class="menu-item">
               <i class="fas fa-user me-2"></i> Perfil
             </a>
             <a href="#" class="menu-item">
               <i class="fas fa-chart-bar me-2"></i> Estatísticas
             </a>
-            <a href="#" class="menu-item">
+            <a href="#" class="menu-item ativo">
               <i class="fas fa-trophy me-2"></i> Loja de Recompensas
             </a>
             <a href="#" class="menu-item">
@@ -118,269 +118,118 @@
         </div>
         <div class="col-lg-9 col-md-8 col-12 p-0">
           <div class="conteudo-principal">
-            <div class="cabecalho-perfil">
-              <h1 class="titulo-perfil">Perfil</h1>
-              <button class="botao-configuracoes">
-                <i class="fas fa-cog"></i>
-              </button>
+            <div class="cabecalho">
+              <h1 class="titulo-principal">Loja de Recompensas</h1>
+              <div
+                class="swift-coins-container d-flex align-items-center gap-2 p-2"
+              >
+                <div
+                  class="swift-coins d-flex align-items-center justify-content-center"
+                >
+                  <div
+                    class="swift-coins-icon d-flex align-items-center justify-content-center"
+                  >
+                    <span class="fw-semibold">S</span>
+                  </div>
+                </div>
+                <span class="swift-coins-amount fw-semibold">985</span>
+              </div>
+            </div>
+            <div class="mb-5">
+              <div
+                class="filtros d-flex align-items-center justify-content-center border bg-light rounded-pill mx-auto my-4 gap-2 p-1 w-100"
+              >
+                <div
+                  class="filtro-item ativo text-white px-3 px-md-4 py-2 rounded-pill fw-semibold"
+                >
+                  <span>Cupons</span>
+                </div>
+                <div class="filtro-item px-3 px-md-4 py-2 rounded-pill">
+                  <span>Produtos</span>
+                </div>
+                <div class="filtro-item px-3 px-md-4 py-2 rounded-pill">
+                  <span>Benefícios</span>
+                </div>
+              </div>
             </div>
 
             <div class="row">
-              <div
-                class="col-lg-12 mb-4 card card-body d-flex justify-content-center"
-              >
-                <div class="text-center">
-                  <div class="foto-perfil">
-                    <i class="fas fa-user foto-placeholder"></i>
-                    <div class="icone-editar">
-                      <i class="fas fa-pen" style="font-size: 12px"></i>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="cupom-card">
+                    <div class="cupom-body p-3 row">
+                        <div class="cupom-desconto col-7">
+                            <h2>30% OFF</h2>
+                            <p>na categoria <span>CARNES</span></p>
+                        </div>
+                        <div class="cupom-condicoes d-flex flex-column align-items-end justify-content-between col-5">
+                            <div class="cupom-validade" >até 30/10/25</div>
+                            <div class="cupom-valor p-2 align-items-center gap-2 d-flex">
+                                <div class="swift-coins-icon-cupom text-white d-flex align-items-center justify-content-center">
+                                    <span class="fw-bold">S</span>
+                                </div>
+                                <span class="swift-coins-amount-cupom text-white">260</span>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-
-                  <h3 class="nome-usuario">Gustavo Silva</h3>
-                  <p class="mb-1">
-                    Analista de Vendas • Departamento Comercial
-                  </p>
-                  <small class="text-muted">Membro desde Janeiro 2024</small>
-
-                  <div class="nivel-container mt-3">
-                    <div class="nivel-numeros">
-                      <span>53</span>
-                      <span>54</span>
-                    </div>
-                    <div class="nivel-progress">
-                      <div class="nivel-fill"></div>
-                    </div>
-                  </div>
                 </div>
+            </div>
 
-                <div class="cartao-estatisticas rounded-3 p-3">
-                  <div class="row g-2">
-                    <div class="col-md-2 col-4">
-                      <div class="estatistica-item rounded-2 p-2 text-center">
-                        <h5 class="fs-5 fw-bold mb-0">180</h5>
-                        <small class="text-warning fw-semibold">XP</small>
-                      </div>
-                    </div>
-                    <div class="col-md-2 col-4">
-                      <div class="estatistica-item rounded-2 p-2 text-center">
-                        <h5 class="fs-5 fw-bold mb-0">985</h5>
-                        <div class="icon-highlight">
-                          <i class="fas fa-coins text-warning"></i>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="cupom-card">
+                    <div class="cupom-body p-3 row">
+                        <div class="cupom-desconto col-7">
+                            <h2>20% OFF</h2>
+                            <p>na categoria <span>BEBIDAS</span></p>
                         </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2 col-4">
-                      <div class="estatistica-item rounded-2 p-2 text-center">
-                        <h5 class="fs-5 fw-bold mb-0">45</h5>
-                        <div class="icon-highlight">
-                          <i class="fas fa-medal text-warning"></i>
+                        <div class="cupom-condicoes d-flex flex-column align-items-end justify-content-between col-5">
+                            <div class="cupom-validade" >até 15/11/25</div>
+                            <div class="cupom-valor p-2 align-items-center gap-2 d-flex">
+                                <div class="swift-coins-icon-cupom text-white d-flex align-items-center justify-content-center">
+                                    <span class="fw-bold">S</span>
+                                </div>
+                                <span class="swift-coins-amount-cupom text-white">100</span>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    <div class="col-md-2 col-4">
-                      <div class="estatistica-item rounded-2 p-2 text-center">
-                        <h5 class="fs-5 fw-bold mb-0">10</h5>
-                        <div class="icon-highlight">
-                          <i class="fas fa-bolt text-warning"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2 col-4">
-                      <div class="estatistica-item rounded-2 p-2 text-center">
-                        <h5 class="fs-5 fw-bold mb-0">2</h5>
-                        <div class="icon-highlight">
-                          <i class="fas fa-trophy text-warning"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-2 col-4">
-                      <div class="estatistica-item rounded-2 p-2 text-center">
-                        <h5 class="fs-5 fw-bold mb-0">15</h5>
-                        <div class="icon-highlight">
-                          <i class="fas fa-users text-warning"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="col-lg-12">
-                <div class="row gap-2">
-                  <div
-                    class="col-lg-4 mb-4 card card-body d-flex justify-content-center"
-                  >
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-3"
-                    >
-                      <h5 class="card-title mb-0">
-                        <i class="fas fa-user-friends text-success me-2"></i>
-                        Amigos (15)
-                      </h5>
-                      <small class="text-muted">4 online</small>
+              
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="cupom-card">
+                    <div class="cupom-body p-3 row">
+                        <div class="cupom-desconto col-7">
+                            <h2>15% OFF</h2>
+                            <p>em compras acima de <span>R$150,00</span></p>
+                        </div>
+                        <div class="cupom-condicoes d-flex flex-column align-items-end justify-content-between col-5">
+                            <div class="cupom-validade" >até 15/11/25</div>
+                            <div class="cupom-valor p-2 align-items-center gap-2 d-flex">
+                                <div class="swift-coins-icon-cupom text-white d-flex align-items-center justify-content-center">
+                                    <span class="fw-bold">S</span>
+                                </div>
+                                <span class="swift-coins-amount-cupom text-white">150</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="lista-amigos border rounded p-3">
-                      <div class="amigo-item">
-                        <div
-                          class="amigo-avatar online d-flex justify-content-center align-items-center"
-                        >
-                          <i class="fas fa-user"></i>
-                        </div>
-                        <div
-                          class="item-amigo-info d-flex align-items-center justify-content-between"
-                        >
-                          <span>João Silva</span>
-                          <span class="xp-amigo fw-semibold">365xp</span>
-                        </div>
-                      </div>
-                      <div class="amigo-item">
-                        <div
-                          class="amigo-avatar online d-flex justify-content-center align-items-center"
-                        >
-                          <i class="fas fa-user"></i>
-                        </div>
-                        <div
-                          class="item-amigo-info d-flex align-items-center justify-content-between"
-                        >
-                          <span>Maria Oliveira</span>
-                          <span class="xp-amigo fw-semibold">324xp</span>
-                        </div>
-                      </div>
-                      <div class="amigo-item">
-                        <div
-                          class="amigo-avatar offline d-flex justify-content-center align-items-center"
-                        >
-                          <i class="fas fa-user"></i>
-                        </div>
-                        <div
-                          class="item-amigo-info d-flex align-items-center justify-content-between"
-                        >
-                          <span>Ana Costa</span>
-                          <span class="xp-amigo fw-semibold">298xp</span>
-                        </div>
-                      </div>
-                      <div class="amigo-item">
-                        <div
-                          class="amigo-avatar offline d-flex justify-content-center align-items-center"
-                        >
-                          <i class="fas fa-user"></i>
-                        </div>
-                        <div
-                          class="item-amigo-info d-flex align-items-center justify-content-between"
-                        >
-                          <span>Carlos Pereira</span>
-                          <span class="xp-amigo fw-semibold">250xp</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="btn-laranja d-flex justify-content-center align-items-center p-2 mx-auto mt-3"
-                    >
-                      <i class="fas fa-plus me-2"></i>
-                      adicionar amigos
-                    </div>
-                  </div>
-
-                  <div class="col-lg-5 col-md-5 mb-4 card card-body">
-                    <div
-                      class="d-flex justify-content-between align-items-center mb-3"
-                    >
-                      <h5 class="card-title mb-0">
-                        <i class="fas fa-chart-line text-warning me-2"></i>
-                        Desempenho Semanal
-                      </h5>
-                    </div>
-                    <div class="grafico-desempenho">
-                      <div class="barra-grafico">
-                        <div class="barra" style="height: 60%"></div>
-                        <div class="barra" style="height: 40%"></div>
-                        <div class="barra" style="height: 80%"></div>
-                        <div class="barra" style="height: 70%"></div>
-                        <div class="barra" style="height: 90%"></div>
-                        <div class="barra" style="height: 50%"></div>
-                        <div class="barra" style="height: 100%"></div>
-                      </div>
-                      <div class="dias-semana">
-                        <span>seg</span>
-                        <span>ter</span>
-                        <span>qua</span>
-                        <span>qui</span>
-                        <span>sex</span>
-                        <span>sáb</span>
-                        <span>dom</span>
-                      </div>
-                    </div>
-                    <div
-                      class="btn-laranja d-flex justify-content-center align-items-center p-2 w-50 mx-auto mt-3"
-                    >
-                      <i class="fas fa-chart-line me-2"></i>
-                      <span>ver detalhes</span>
-                    </div>
-                  </div>
                 </div>
-
-                <div class="col-lg-12 mb-4">
-                  <div class="row gap-2">
-                    <div class="col-lg-4 mb-4 card card-body">
-                      <h5 class="card-title">
-                        <i class="fas fa-tools text-primary me-2"></i>
-                        Habilidades
-                      </h5>
-
-                      <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-semibold">Vendas</span>
-                          <span class="badge bg-primary">Avançado</span>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="cupom-card">
+                    <div class="cupom-body p-3 row">
+                        <div class="cupom-desconto col-7">
+                            <h2>R$20,00 OFF</h2>
+                            <p>em compras acima de <span>R$100,00</span></p>
                         </div>
-                        <div class="progress">
-                          <div
-                            class="progress-bar bg-primary"
-                            style="width: 85%"
-                          ></div>
+                        <div class="cupom-condicoes d-flex flex-column align-items-end justify-content-between col-5">
+                            <div class="cupom-validade" >até 05/12/25</div>
+                            <div class="cupom-valor p-2 align-items-center gap-2 d-flex">
+                                <div class="swift-coins-icon-cupom text-white d-flex align-items-center justify-content-center">
+                                    <span class="fw-bold">S</span>
+                                </div>
+                                <span class="swift-coins-amount-cupom text-white">100</span>
+                            </div>
                         </div>
-                      </div>
-
-                      <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-semibold">Atendimento</span>
-                          <span class="badge bg-success">Intermediário</span>
-                        </div>
-                        <div class="progress">
-                          <div
-                            class="progress-bar bg-success"
-                            style="width: 65%"
-                          ></div>
-                        </div>
-                      </div>
-
-                      <div class="mb-3">
-                        <div class="d-flex justify-content-between mb-1">
-                          <span class="fw-semibold">Liderança</span>
-                          <span class="badge bg-warning">Iniciante</span>
-                        </div>
-                        <div class="progress">
-                          <div
-                            class="progress-bar bg-warning"
-                            style="width: 30%"
-                          ></div>
-                        </div>
-                      </div>
                     </div>
-                    <div class="col-lg-3 mb-4 card card-body">
-                      <button
-                        class="botao-treinamentos botao-treinos mb-2 d-flex align-items-center justify-content-center p-5 text-white"
-                      >
-                        <i class="fas fa-dumbbell me-2"></i>
-                        Treinamentos
-                      </button>
-                      <button
-                        class="botao-treinamentos botao-certificacoes d-flex align-items-center justify-content-center p-5 text-white"
-                      >
-                        <i class="fas fa-certificate me-2"></i>
-                        Cerificações
-                      </button>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
