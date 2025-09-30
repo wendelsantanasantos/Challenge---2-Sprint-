@@ -1,0 +1,106 @@
+@import url("styles.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily-1r);
+  background-color: #f5f5f5;
+  color: var(--textColor-1r);
+  line-height: 1.5;
+}
+
+.conteudo-principal {
+  margin-top: 9vh;
+  background-color: #f5f5f5;
+  padding: 25px;
+  border-left: 1px solid #e0e0e0;
+}
+
+.titulo-principal {
+  color: var(--textColor-2r);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.btn-filtro {
+  background: #fff;
+  border: 1px solid #eee;
+  color: var(--textColor-1r);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 500;
+}
+
+.btn-filtro.ativo,
+.btn-filtro:hover {
+  background: #FFEDE4;
+  color: var(--textColor-2r);
+  border-color: #ffd7c0;
+}
+
+.lista-comunicados {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.card-body {
+  padding: 20px 24px;
+}
+
+.autor .avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.autor .nome {
+  font-weight: 600;
+  color: var(--textColor-2r);
+}
+
+.autor .verificado {
+  color: var(--btn-color1);
+  font-size: 0.9rem;
+}
+
+.autor .tempo {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.titulo {
+  color: var(--textColor-2r);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.conteudo p {
+  margin-bottom: 8px;
+}
+
+.conteudo ul {
+  margin: 0 0 8px 18px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+  .conteudo-principal { padding: 20px; }
+}
+
+@media (max-width: 768px) {
+  .conteudo-principal { padding: 16px; }
+  .titulo-principal { font-size: 22px; }
+}

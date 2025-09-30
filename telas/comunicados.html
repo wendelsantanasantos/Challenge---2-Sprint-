@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunicados | Swift</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="../css/comunicados.styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="navbar navbar-expand-lg d-flex justify-content-between align-items-center px-lg-4 px-2 py-3">
+          <div class="logo-container">
+            <img src="../assets/Novo_Logo_Swift-04.png" alt="logo swift" class="logo-img" />
+          </div>
+          <div class="barra-pesquisa mx-lg-4 mx-2 w-50">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search" />
+              <button class="btn btn-outline-success d-none d-md-block" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+              <button class="btn btn-outline-success d-md-none px-2" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="acoes-navbar d-flex align-items-center gap-lg-3 gap-2">
+            <div class="icone-perfil d-flex align-items-center gap-2 d-none d-md-inline">
+              <i class="fas fa-user"></i>
+              <span class="username">Gustavo Oliveira</span>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="icone-notificacoes">
+              <i class="fas fa-bell"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 d-none d-md-block p-0">
+          <div class="sidebar">
+            <div class="menu-secao">MENU</div>
+            <a href="./perfil.html" class="menu-item"><i class="fas fa-user me-2"></i> Perfil</a>
+            <a href="./dashboard.html" class="menu-item"><i class="fas fa-chart-bar me-2"></i> Estatísticas</a>
+            <a href="./lojaRecomepensas.html" class="menu-item"><i class="fas fa-trophy me-2"></i> Loja de Recompensas</a>
+            <a href="#" class="menu-item"><i class="fas fa-bullseye me-2"></i> Objetivos</a>
+            <a href="#" class="menu-item ativo"><i class="fas fa-comments me-2"></i> Comunicados</a>
+
+            <div class="menu-secao">OUTROS</div>
+            <a href="#" class="menu-item"><i class="fas fa-cog me-2"></i> Configurações</a>
+            <a href="#" class="menu-item"><i class="fas fa-coins me-2"></i> Pontos</a>
+            <a href="#" class="menu-item"><i class="fas fa-users me-2"></i> Colaboradores</a>
+            <a href="#" class="menu-item"><i class="fas fa-book me-2"></i> Explicação</a>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-12 p-0">
+          <div class="conteudo-principal">
+            <div class="cabecalho d-flex align-items-center justify-content-between">
+              <h1 class="titulo-principal m-0">Comunicados</h1>
+              <div class="filtros-topo d-none d-md-flex align-items-center gap-2">
+                <button class="btn btn-filtro ativo">Todos</button>
+                <button class="btn btn-filtro">Empresa</button>
+                <button class="btn btn-filtro">Equipe</button>
+              </div>
+            </div>
+
+            <div class="lista-comunicados mt-4">
+              <div class="comunicado card p-0">
+                <div class="card-body">
+                  <div class="autor align-items-center d-flex gap-2 mb-2">
+                    <img src="../assets/avatar.png" alt="avatar" class="avatar" />
+                    <span class="nome">Gustavo Oliveira</span>
+                    <i class="fa-solid fa-circle-check verificado"></i>
+                    <span class="tempo ms-auto">10 horas atrás</span>
+                  </div>
+                  <h6 class="titulo">COMUNICADO IMPORTANTE AOS COLABORADORES</h6>
+                  <div class="conteudo">
+                    <p>Prezada equipe,</p>
+                    <p>Gostaríamos de reforçar o compromisso da nossa empresa com o reconhecimento e valorização de todos que contribuem diariamente para o nosso crescimento. Aqui na Swift, acreditamos que o sucesso é construído com trabalho em equipe, dedicação e foco em resultados.</p>
+                    <p>Por isso, queremos lembrar que os nossos benefícios e bonificações estão diretamente ligados ao cumprimento dos objetivos e metas estabelecidos. Esse modelo de reconhecimento foi criado para premiar quem veste a camisa, entrega com excelência e ajuda a nossa distribuidora a se destacar no mercado.</p>
+                    <p class="mb-1">Como funciona:</p>
+                    <ul>
+                      <li>Metas claras e alcançáveis são definidas por setor;</li>
+                      <li>Ao atingir os objetivos, os colaboradores têm direito a benefícios adicionais e bonificações;</li>
+                      <li>Quanto maior o desempenho, maior o reconhecimento.</li>
+                    </ul>
+                    <p>Essa é uma forma justa e transparente de crescermos juntos, valorizando quem realmente faz a diferença. Contamos com o empenho de todos para mantermos nossos resultados em alta e seguirmos evoluindo!</p>
+                    <p class="mb-0">Atenciosamente,<br/>Gustavo Oliveira<br/>Diretor Geral | Swift</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comunicado card p-0">
+                <div class="card-body">
+                  <div class="autor align-items-center d-flex gap-2 mb-2">
+                    <img src="../assets/avatar.png" alt="avatar" class="avatar" />
+                    <span class="nome">Gustavo Oliveira</span>
+                    <i class="fa-solid fa-circle-check verificado"></i>
+                    <span class="tempo ms-auto">3 horas atrás</span>
+                  </div>
+                  <h6 class="titulo">Bem-vindo à Swift</h6>
+                  <div class="conteudo">
+                    <p>É com satisfação que damos as boas-vindas à nossa equipe. Na Swift, prezamos pela excelência, responsabilidade e comprometimento. Acreditamos que cada colaborador é parte fundamental do nosso crescimento e sucesso.</p>
+                    <p>Desejamos que esta nova etapa seja produtiva, marcada por aprendizado, desenvolvimento profissional e realizações.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
