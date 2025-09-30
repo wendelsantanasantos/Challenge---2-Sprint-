@@ -77,11 +77,75 @@
               <span class="username">Gustavo Silva</span>
               <i class="fas fa-chevron-down"></i>
             </div>
-            <div class="icone-notificacoes">
-              <i class="fas fa-bell"></i>
+            <div
+              class="icone-notificacoes"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNotificacoes"
+              aria-controls="offcanvasNotificacoes"
+              aria-label="Abrir notificações"
+            >
+              <i class="fas fa-bell fa-lg"></i>
             </div>
           </div>
         </div>
+
+        <div
+          class="offcanvas offcanvas-end fade"
+          tabindex="-1"
+          id="offcanvasNotificacoes"
+          aria-labelledby="offcanvasNotificacoesLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNotificacoesLabel">
+              Notificações
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Fechar"
+            ></button>
+          </div>
+          <div class="offcanvas-body ">
+            <ul class="notificacoes-lista p-0">
+              <li class="notificacoes-item list-unstyled my-2 bg-dark p-2 mx-auto rounded-3">
+                <div class="d-flex align-items-center  gap-2">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="../assets/Group 61.png" alt="logo">
+                </div>
+                <div>
+                  <p class="text-white m-0 notificacoes-item-text">Ei! você tem uma recompensa diária te aguardando, não deixe ela expirar!</p>
+                <span class="notificacoes-item-data ">28/09/2025 - 10:00</span>
+                </div>
+              </div>
+            </li>
+            <li class="notificacoes-item list-unstyled my-2 bg-dark p-2 mx-auto rounded-3">
+                <div class="d-flex align-items-center  gap-3">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="../assets/Group 61.png" alt="logo">
+                </div>
+                <div>
+                  <p class="text-white m-0 notificacoes-item-text">Parabéns! Você alcançou um novo nível. Continue assim!</p>
+                <span class="notificacoes-item-data ">27/09/2025 - 15:30</span>
+                </div>
+              </div>
+            </li>
+            <li class="notificacoes-item list-unstyled my-2 bg-dark p-2 mx-auto rounded-3">
+                <div class="d-flex align-items-center  gap-3">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img src="../assets/Group 61.png" alt="logo">
+                </div>
+                <div>
+                  <p class="text-white m-0 notificacoes-item-text">Boa! Você concluiu uma nova missão diária, venha coletar a sua recompensa agora mesmo!</p>
+                <span class="notificacoes-item-data ">26/09/2025 - 09:45</span>
+                </div>
+              </div>
+            </li>
+              
+            </ul>
+          </div>
+        </div>
+
         <div class="col-lg-3 col-md-4 d-none d-md-block p-0">
           <div class="sidebar">
             <div class="menu-secao">MENU</div>
