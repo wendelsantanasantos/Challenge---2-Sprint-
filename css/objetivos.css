@@ -1,0 +1,188 @@
+@import url("styles.css");
+
+.conteudo-principal {
+  margin-top: 5em;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.cabecalho {
+  margin-bottom: 30px;
+}
+
+.titulo-principal {
+  color: var(--textColor-2r);
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.status-container {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.212);
+  background-color: var(--btn-color1);
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background-color: white;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-weight: 600;
+  color: var(--textColor-2r);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.progresso-bar {
+  background-color: #ffa726;
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+.missao-item {
+  margin-bottom: 3em;
+}
+.missao-item p {
+  font-size: 0.9em;
+}
+
+.completa p {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.missao-item span {
+  font-weight: 700;
+}
+
+.missao-recompensa {
+  align-items: center;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: var(--bgColor-2r);
+  font-weight: 500;
+}
+
+.desafio-card {
+  background: var(--gradient-1r);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+.desafio-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desafio-icon i {
+  font-size: 2.5rem;
+}
+
+.desafio-card h6 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.desafio-card p {
+  margin-bottom: 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+
+}
+
+.desafio-recompensa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.267);
+  padding: 0.4rem 0.875rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.badge-validade {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background:var(--bgColor-2r);
+
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+}
+
+.conquista-item{
+    height: 200px;
+    width: 30%;
+}
+
+.conquista-item-concluido{
+    background-color: #e7d7c8;
+    border: 2px solid var(--btn-color1);
+}
+
+.conquista-icon{
+    font-size: 2.5rem;
+    color:var(--bgColor-4r);
+    margin-bottom: 10px;
+}
+.conquista-descricao{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-coletar{
+    font-size: 0.9rem;
+    background-color: var(--btn-color1);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.4);
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .conquista-item{
+    flex: 0 0 50%;
+
+}
+.conquista-icon{
+    font-size: 2rem;
+}
+.conquista-descricao{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.btn-coletar{
+    font-size: 0.8rem;
+}
+}
+
+@media (max-width: 500px) {
+  .conquista-item{
+    flex: 0 0 100%;
+
+}
+}

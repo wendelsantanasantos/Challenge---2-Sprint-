@@ -266,6 +266,23 @@ body {
   background-color: var(--btn-color1);
 }
 
+.icone-notificacoes::after {
+  content: "3";
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  background: var(--bgColor-2r);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+}
+
+
 @media (max-width: 765px) {
   .sidebar {
     display: none;
