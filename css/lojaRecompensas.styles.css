@@ -77,14 +77,29 @@ body {
 }
 .filtro-item {
   cursor: pointer;
-  transition: 0.8s ease;
+  transition: 0.3s ease;
 }
+
+.filtro-item a{
+  color: var(--textColor-1r);
+  text-decoration: none;
+}
+
+.filtro-item:hover a{
+  color: #f5f5f5;
+}
+
 .filtro-item:hover {
-  background-color: var(--bgColor-1r);
+  background-color: var(--bgColor-2r);
 }
 
 .ativo {
-  background-color: var(--bgColor-2r);
+  background-color: var(--bgColor-2r); 
+}
+
+.ativo:hover {
+  background-color: var(--bgColor-2r); 
+  color: #f5f5f5;
 }
 
 .cupom-card {
