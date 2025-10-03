@@ -82,33 +82,33 @@
           <div class="sidebar">
             <div class="menu-secao">MENU</div>
 
-            <a href="#" class="menu-item">
+            <a data-nav="perfil" href="#" class="menu-item">
               <i class="fas fa-chart-bar me-2"></i> Perfil
             </a>
-            <a href="#" class="menu-item">
+            <a data-nav="dashboard" href="#" class="menu-item">
               <i class="fas fa-chart-bar me-2"></i> Estatísticas
             </a>
-            <a href="#" class="menu-item">
+            <a data-nav="lojaRecompensas" href="#" class="menu-item">
               <i class="fas fa-trophy me-2"></i> Loja de Recompensas
             </a>
-            <a href="#" class="menu-item ativo">
+            <a data-nav="objetivos" href="#" class="menu-item ativo">
               <i class="fas fa-bullseye me-2"></i> Objetivos
             </a>
-            <a href="#" class="menu-item">
+            <a data-nav="comunicados" href="#" class="menu-item">
               <i class="fas fa-comments me-2"></i> Comunicados
             </a>
 
             <div class="menu-secao">OUTROS</div>
-            <a href="#" class="menu-item">
+            <a data-nav="configuracoes" href="#" class="menu-item">
               <i class="fas fa-cog me-2"></i> Configurações
             </a>
-            <a href="#" class="menu-item">
+            <a data-nav="pontos" href="#" class="menu-item">
               <i class="fas fa-coins me-2"></i> Pontos
             </a>
-            <a href="#" class="menu-item">
+            <a data-nav="colaboradores" href="#" class="menu-item">
               <i class="fas fa-users me-2"></i> Colaboradores
             </a>
-            <a href="#" class="menu-item">
+            <a data-nav="explicacao" href="#" class="menu-item">
               <i class="fas fa-book me-2"></i> Explicação
             </a>
           </div>
@@ -170,7 +170,7 @@
                     <div class="missoes-progress mb-3">
                       <div class="d-flex justify-content-between mb-2">
                         <small class="text-muted"
-                          >Progresso: 3/5 completas</small
+                          ></small
                         >
                         <small class="fw-bold">60%</small>
                       </div>
@@ -485,5 +485,7 @@
         </main>
       </div>
     </div>
-  </body>
+    <script src="../js/router.js" defer></script>
+    <script src="../js/missoes.js"></script>
+</body>
 </html>
