@@ -58,11 +58,6 @@
   font-size: 0.9em;
 }
 
-.completa p {
-  text-decoration: line-through;
-  color: gray;
-}
-
 .missao-item span {
   font-weight: 700;
 }
